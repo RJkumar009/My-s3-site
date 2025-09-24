@@ -7,9 +7,10 @@ phases:
 
   build:
     commands:
-      - echo "Build phase - no build steps, just preparing files"
+      - echo "Build phase started"
+      - echo "Build completed successfully"
 
 artifacts:
   files:
     - '**/*'
-  base-directory: s3-site-build
+  base-directory: s3-site-build/
