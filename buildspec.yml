@@ -3,12 +3,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "No dependencies to install"
+      - echo "Installing dependencies"
+      - npm ci
   build:
     commands:
-      - echo "Build started on `date`"
-      - echo "Copying files..."
+      - echo "Running build"
+      - npm run build
 artifacts:
+  # Upload only the built assets
+  base-directory: dist
   files:
     - '**/*'
-  base-directory: ./s3-site-build
+  discard-paths: no
