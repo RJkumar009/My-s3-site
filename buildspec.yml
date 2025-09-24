@@ -13,4 +13,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: s3-site-build/
+  base-directory: s3-site-build
