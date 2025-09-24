@@ -3,14 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing...
+      - echo "No dependencies to install"
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling the application...
-      # If using React/Vue/Angular, run build commands here
-      # For plain HTML, no build step needed
+      - echo "Build started on `date`"
+      - echo "Copying files..."
 artifacts:
   files:
     - '**/*'
-  base-directory: s3-site-build   # 👈 VERY IMPORTANT: should point to folder where index.html exists
+  base-directory: .
