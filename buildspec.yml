@@ -7,6 +7,8 @@ phases:
   build:
     commands:
       - echo Build started on 'date'
+      - echo compiling the application
 artifacts:
   files:
     - '**/*'
+  base-directory: build
